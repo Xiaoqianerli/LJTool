@@ -1,0 +1,20 @@
+{
+    "name": "LianjiaTools",
+    "description": "Download LianJiaData",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "down",
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://xa.lianjia.com/chengjiao/*"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ]
+}
